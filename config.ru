@@ -3,6 +3,11 @@ require 'sequel'
 require 'rack/parser'
 require_relative 'db/init'
 require_relative 'app'
+
+require 'action_mailer'
+require_relative 'server/mailers/mail'
+require_relative 'server/mailers/mailer'
+
 # load all the server files
 root_dir = File.dirname(__FILE__)
 %w{helpers models controllers}.each do |type|

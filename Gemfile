@@ -8,6 +8,7 @@ gem 'rack-parser', :require => 'rack/parser'
 gem 'rake'
 gem 'rspec'
 gem 'sass'
+gem "actionmailer", require: "action_mailer"
 group :production do
   gem 'pg'
 end
